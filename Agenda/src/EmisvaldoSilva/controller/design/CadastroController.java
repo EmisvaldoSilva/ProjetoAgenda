@@ -8,7 +8,10 @@ package EmisvaldoSilva.controller.design;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.layout.FlowPane;
 
 /**
  * FXML Controller class
@@ -16,6 +19,13 @@ import javafx.fxml.Initializable;
  * @author Emisvaldo
  */
 public class CadastroController implements Initializable {
+    
+    
+    @FXML
+    private FlowPane fpRodape;
+
+    @FXML
+    private Button bSalvar;
 
     /**
      * Initializes the controller class.

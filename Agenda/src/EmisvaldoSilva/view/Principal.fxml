@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.input.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmisvaldoSilva.controller.PrincipalController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
-</AnchorPane>
+
+<BorderPane minHeight="550.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox prefHeight="38.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar fx:id="mbMenuBar">
+              <menus>
+                <Menu mnemonicParsing="false" text="Contato">
+                  <items>
+                    <MenuItem fx:id="miCadastrar" mnemonicParsing="false" text="Cadastrar">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="DIGIT1" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="miConsultar" mnemonicParsing="false" text="Consultar" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Grupo Contato">
+                  <items>
+                    <MenuItem fx:id="miGrupoContato" mnemonicParsing="false" text="Cadastrar" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar prefHeight="124.0" prefWidth="800.0">
+              <items>
+                <Button fx:id="bContato" alignment="CENTER" contentDisplay="TOP" text="_Contato">
+                     <graphic>
+                        <ImageView fx:id="bContato" fitHeight="42.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Contato.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Separator orientation="VERTICAL" prefHeight="42.0" prefWidth="6.0" />
+                  <Button fx:id="bGrupoContato" alignment="TOP_CENTER" contentDisplay="TOP" text="_Grupo de Contatos">
+                     <graphic>
+                        <ImageView fx:id="bGrupoContato" fitHeight="42.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Grupo%20Contato.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+              </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
