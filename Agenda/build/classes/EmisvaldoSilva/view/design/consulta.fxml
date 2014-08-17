@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EmisvaldoSilva.view.design.ConsultaController">
-    
-</AnchorPane>
+
+<FlowPane alignment="CENTER_RIGHT" maxHeight="30.0" maxWidth="-Infinity" minHeight="30.0" minWidth="-Infinity" prefHeight="30.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets right="5.0" />
+   </padding>
+   <children>
+      <Button fx:id="bNovo" prefWidth="120.0" text="_Novo">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Novo.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button prefWidth="120.0" text="_Alterar">
+         <graphic>
+            <ImageView fx:id="bAlterar" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Editar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="bRemover" prefWidth="120.0" text="_remover">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Remover.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</FlowPane>
